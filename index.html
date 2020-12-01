@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -36,14 +36,54 @@
             <input type="text" class="form-control pl-3" placeholder="Search">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
-        </form>
+		</form>
+		
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">Arriendo</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+				<li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Arriendo Herramientas
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color: orange">
+						<a class="dropdown-item" href="#">Aseo</a>
+						<a class="dropdown-item" href="#">Demolición</a>
+						<a class="dropdown-item" href="#">Electricas</a>
+						<a class="dropdown-item" href="#">Jardin</a>
+						<a class="dropdown-item" href="#">Varias</a>
+						<a class="dropdown-item" href="#">Pavimentación</a>
+					</div>
+				  </li>
+
+	          	<li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
 	        </ul>
-	      </div>
+		  </div>
+		  
+		  <div class="dropdown">
+			<button class="btn dropdown-toggle sr-only" type="button"
+					id="dropdownMenu1" data-toggle="dropdown">
+			  Menú desplegable
+			  <span class="caret"></span>
+			</button>
+		  
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			  <li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Acción</a>
+			  </li>
+			  <li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Otra acción</a>
+			  </li>
+			  <li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Otra acción más</a>
+			  </li>
+			  <li role="presentation" class="divider"></li>
+			  <li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Acción separada</a>
+			  </li>
+			</ul>
+		  </div>
+
 	    </div>
 	  </nav>
     <!-- END nav -->
