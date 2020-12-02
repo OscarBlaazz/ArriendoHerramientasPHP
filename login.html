@@ -7,14 +7,14 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Login Arriendo Herramientas</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
         <SCRIPT  language=JavaScript> 
         function go(){
 
-            if (document.form.password.value=='admin' && document.form.login.value=='password'){ 
+            if (document.form.password.value=='admin' && document.form.login.value=='admin'){ 
                     document.form.submit(); 
                 } 
                 else{ 
@@ -38,7 +38,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Contraseña</label>
-                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Ingrese Contraseña" name="password"/>
+                                                <input class="form-control py-4" required id="inputPassword" type="password" placeholder="Ingrese Contraseña" name="password"/>
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
@@ -62,17 +62,18 @@
                 </main>
             </div>
         </div>
-        <br>
+        
         <footer class="footer">
 			<div class="row mt-md-5">
 				<div class="col-md-12">
 			<p class="copyright" style="text-align: center;">
-		  	Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i class="ion-ios-heart" aria-hidden="true"></i>  <a href="https://ubiobio.cl" target="_blank">UBB</a>
-		  	</p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>   <a href="#" target="_blank">RentTools S.A</a>
+            </p>
 				</div>
 			</div>
 		</footer>
         
+    
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>

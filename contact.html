@@ -22,48 +22,60 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-	<body><div class="container pt-5">
+	<body>
+		<SCRIPT  language=JavaScript> 
+			function enviar(){
+				alert("Mensaje Enviado"); 
+
+			}
+		</SCRIPT><div class="container pt-5">
+
+
 		<div class="row justify-content-between">
 			<div class="col">
-				<a class="navbar-brand" href="index.html">Constru<span>Mart.</span></a>
+				<a class="navbar-brand" href="index.html">Rent<span>Tools.</span></a>
 			</div>
 		</div>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	<div class="container">
+	    <div class="container">
+	    
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+		<form action="#" class="searchform order-lg-last">
+			<div class="form-group d-flex">
+				<input type="text" class="form-control pl-3" placeholder="Search">
+				<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			</div>
+		</form>
+		
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="fa fa-bars"></span> Menu
-	</button>
-			<form action="#" class="searchform order-lg-last">
-	<div class="form-group d-flex">
-		<input type="text" class="form-control pl-3" placeholder="Search">
-		<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-	</div>
-	</form>
-	<div class="collapse navbar-collapse" id="ftco-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Arriendo Herramientas
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color: orange">
+						<a class="dropdown-item" href="aseo.html">Aseo</a>
+						<a class="dropdown-item" href="#">Demolición</a>
+						<a class="dropdown-item" href="#">Electricas</a>
+						<a class="dropdown-item" href="#">Jardin</a>
+						<a class="dropdown-item" href="#">Varias</a>
+						<a class="dropdown-item" href="#">Pavimentación</a>
+					</div>
+				  </li>
+				  <li class="nav-item active"><a href="contact.html" class="nav-link">Contacto</a></li>
+				  <li class="nav-item"><a href="inicio_Administrador.html" class="nav-link">Ir Vista Admin</a></li>
+	        </ul>
+		  </div>
+		</div>
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  Arriendo Herramientas
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color: orange">
-					<a class="dropdown-item" href="#">Aseo</a>
-					<a class="dropdown-item" href="#">Demolición</a>
-					<a class="dropdown-item" href="#">Electricas</a>
-					<a class="dropdown-item" href="#">Jardin</a>
-					<a class="dropdown-item" href="#">Varias</a>
-					<a class="dropdown-item" href="#">Pavimentación</a>
-				</div>
-			  </li>
-
-			  <li class="nav-item  active"><a href="contact.html" class="nav-link">Contacto</a></li>
-		</ul>
-	  </div>
-	</div>
-	</nav>
+			<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li> 
+		 </ul>
+	  </nav>
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
@@ -119,7 +131,7 @@
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="Enviar Mensaje" class="btn btn-primary">
+														<input type="submit" value="Enviar Mensaje" onclick=enviar() class="btn btn-primary">
 														<div class="submitting"></div>
 													</div>
 												</div>
@@ -162,14 +174,12 @@
 		<div class="row mt-md-5">
 			<div class="col-md-12">
 		<p class="copyright" style="text-align: center;">
-		  Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i class="ion-ios-heart" aria-hidden="true"></i>  <a href="https://ubiobio.cl" target="_blank">UBB</a>
-		  </p>
+			Copyright &copy;<script>document.write(new Date().getFullYear());</script>   <a href="#" target="_blank">RentTools S.A</a>
+		</p>
 			</div>
 		</div>
 	</footer>
     
-  
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
