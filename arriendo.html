@@ -23,47 +23,58 @@
   </head>
 
 	<body><div class="container pt-5">
+
+		<SCRIPT  language=JavaScript> 
+			function enviar(){
+				alert("Mensaje Enviado"); 
+
+			}
+		</SCRIPT><div class="container pt-5">
 		<div class="row justify-content-between">
-			<div class="col">
-				<a class="navbar-brand" href="index.html">Constru<span>Mart.</span></a>
-			</div>
-		</div>
+            <div class="col">
+                <a class="navbar-brand" href="inicio_Administrador.html">Rent<span>Tools.</span></a>
+            </div>
+        </div>
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	<div class="container">
+	    <div class="container">
+	    
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+		<form action="#" class="searchform order-lg-last">
+			<div class="form-group d-flex">
+				<input type="text" class="form-control pl-3" placeholder="Search">
+				<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			</div>
+		</form>
+		
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="fa fa-bars"></span> Menu
-	</button>
-			<form action="#" class="searchform order-lg-last">
-	<div class="form-group d-flex">
-		<input type="text" class="form-control pl-3" placeholder="Search">
-		<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-	</div>
-	</form>
-	<div class="collapse navbar-collapse" id="ftco-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Arriendo Herramientas
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color: orange">
+						<a class="dropdown-item" href="aseo.html">Aseo</a>
+						<a class="dropdown-item" href="demolicion.html">Demolición</a>
+						<a class="dropdown-item" href="electricas.html">Electricas</a>
+						<a class="dropdown-item" href="jardin.html">Jardin</a>
+						<a class="dropdown-item" href="varias.html">Varias</a>
+						<a class="dropdown-item" href="pavimentacion.html">Pavimentación</a>
+					</div>
+				  </li>
+				  <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+				  <li class="nav-item"><a href="inicio_Administrador.html" class="nav-link">Ir Vista Admin</a></li>
+	        </ul>
+		  </div>
+		</div>
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  Arriendo Herramientas
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color: orange">
-					<a class="dropdown-item" href="#">Aseo</a>
-					<a class="dropdown-item" href="#">Demolición</a>
-					<a class="dropdown-item" href="#">Electricas</a>
-					<a class="dropdown-item" href="#">Jardin</a>
-					<a class="dropdown-item" href="#">Varias</a>
-					<a class="dropdown-item" href="#">Pavimentación</a>
-				</div>
-			  </li>
-
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-		</ul>
-	  </div>
-	</div>
-	</nav>
+			<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li> 
+		 </ul>
+	  </nav>
     <!-- END nav -->
 	
     <section class="ftco-section">
@@ -74,59 +85,53 @@
 							<div class="row no-gutters mb-5">
 								<div class="col-md-7">
 									<div class="contact-wrap w-100 p-md-5 p-4">
-										<h3 class="mb-4">Contrato de arriendo</h3>
+										<h3 class="mb-4">Formulario Arriendo Herramientas</h3>
 										<div id="form-message-warning" class="mb-4"></div> 
 										<form method="POST" action="index.html" class="contactForm">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
-														<label class="label" for="">Nombre Cliente</label>
+														<label class="label" >Nombre Cliente</label>
 														<input type="text" class="form-control" name="texto" value="Juan Jara Soto Pérez" readonly>
 													</div>
 												</div>
-												<div class="col-md-6"> 
+												<div class="col-md-6">
 													<div class="form-group">
-														<label class="label" for="email">Herramienta</label>
-														<input type="text" class="form-control" name="texto" value="Nombre x, modelo x" readonly>
+														<label class="label" >Herramienta</label>
+														<input type="text" class="form-control" name="texto" value="Bauker, Taladro 450W" readonly>
 													</div>
 												</div>
 												<div class="col-md-2">
 													<div class="form-group">
 														<label class="label" for="subject">Cantidad</label>
-                                                        <select name="menu" class="form-control">
+                                                        <select required name="menu" class="form-control">
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
                                                             <option>4</option>
-                                                            <option>5</option>
                                                           </select>
 													</div>
                                                 </div>
                                                 <div class="col-md-12">
 													<div class="form-group">
-                                                        Duración contrato de arriendo:
+                                                        <lablel class="label"> Duración  de arriendo:</lablel>
 													</div>
 												</div>
                                                 <div class="col-md-6">
 													<div class="form-group">
 														<label class="label" for="">Fecha inicio</label>
-														<input type="date" class="form-control" name="fecha">
+														<input required type="date" class="form-control" name="fecha">
 													</div>
 												</div>
 												<div class="col-md-6"> 
 													<div class="form-group">
 														<label class="label" for="email">Fecha termino</label>
-														<input type="date" class="form-control" name="fecha">
+														<input  required type="date" class="form-control" name="fecha">
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-                                                        <button  id="submitForm" class="btn btn-primary">Arrendar</button>
-                                                        <script>
-                                                            $("#submitForm").click(function() {
-                                                                alert("Arriendo realizado exitosamente!");
-                                                            });
-                                                        </script>
+                                                  <!-- onclick=enviar()-->      <button id="submitForm" class="btn btn-primary">Enviar Formulario Arriendo</button>
                                                     </div>
 												</div>
                                             </div>
@@ -138,37 +143,20 @@
 				    </div>
 				</div>
 			</div>
-			
-		<div class="row">
-			<div class="col-md-3">
-				<div class="dbox w-100 text-center">
-			<div class="icon d-flex align-items-center justify-content-center">
-				<span class="fa fa-map-marker"></span>
-			</div>
-			<div class="text">
-			<p><span>Dirección:</span> Ecuador #599, Chillán</p>
-		</div>
+		
 
 		</div>
-		</div>
-		<div class="col-md-3">
-			<div class="dbox w-100 text-center">
-		<div class="icon d-flex align-items-center justify-content-center">
-			<span class="fa fa-phone"></span>
-		</div>
-		<div class="text">
-		<p><span>Fono</span> <a>+569 12345678</a></p>
 		</div>
 	</section>
 	
 	<section>
 	</section>
 
-    <footer class="footer">
+	<footer class="footer">
 		<div class="row mt-md-5">
 			<div class="col-md-12">
 		<p class="copyright" style="text-align: center;">
-		  Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i class="ion-ios-heart" aria-hidden="true"></i>  <a href="https://ubiobio.cl" target="_blank">UBB</a>
+		  Copyright &copy;<script>document.write(new Date().getFullYear());</script>   <a href="#" target="_blank">RentTools S.A</a>
 		  </p>
 			</div>
 		</div>
