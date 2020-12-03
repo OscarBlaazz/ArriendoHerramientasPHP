@@ -90,9 +90,12 @@
             <div class="work img d-flex align-items-end" style="background-image: url(images/jardin-1.jpg);">
             	<div class="desc w-100 px-4">
 	              <div class="text w-100 mb-3">
-	              	<span>Herramienta</span>
+                    <span>Arrendar</span>
 	              	<h2><a href="arriendo.html">Cortadora pasto</a></h2>
-	              </div>
+                  </div>
+                  <div> 
+                    <button id="mostrar" class="btn btn-primary">Descipción</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -129,6 +132,32 @@
           </div>
 		</section>
 
+        <dialog id="dialogo">
+            <table>
+                <tr>
+                    <td>Marca: </td>
+                    <td>xxxx</td>
+                </tr>
+                <tr>
+                    <td>Modelo: </td>
+                    <td>xxxx</td>
+                </tr>
+                 <tr>
+                    <td>Ancho: </td>
+                    <td>xxxx</td>
+                </tr>
+                <tr>
+                    <td>Alto: </td>
+                    <td>xxxx</td>
+                </tr>
+                <tr>
+                    <td>Alimentacion: </td>
+                    <td>xxxx</td>
+              </table>
+              <br>
+            <button id="cerrar" class="btn btn-primary">Cerrar</button>
+          </dialog>
+
         <footer class="footer">
 			<div class="row mt-md-5">
 				<div class="col-md-12">
@@ -144,7 +173,20 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <script>
+        var mostar = document.getElementById('mostrar');
+        var cerrar = document.getElementById('cerrar');
+        var dialogo = document.getElementById('dialogo');
 
+        mostrar.addEventListener('click', function() {
+        dialogo.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cerrar.addEventListener('click', function() {
+        dialogo.close();
+        });
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
